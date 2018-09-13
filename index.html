@@ -1,128 +1,190 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Мой сайт портфолио</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">    <!-- инструкция для IE -->
-	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- в масштабе 100% -->
-	<!-- 	Нормализация стилей-->	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
-	<!--Собственные стили-->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!--Подключение веб-шрифтов-->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon/Web.png">
+    <meta charset="utf-8">
+    <title>Мой сайт портфолио</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <!-- инструкция для IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- в масштабе 100% -->
+    <!-- 	Нормализация стилей-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <!--Собственные стили-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--Подключение веб-шрифтов-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/Web.png">
 </head>
 <body>
-	<!-- HEADER -->
-	<div class="header">
-		<div class="im"></div>
-		<div class="header_title">Timur Tsokov</div>
-		<div class="header_slogan">Верстка сайтов на HTML и CSS <br> HTML5 CSS3 JS PHP</div>
-		<div class="header_arrow">
-<!-- 			<i class="fa fa-chevron-down" aria-hidden="true"></i>	 -->
-		</div>
-	</div> 
-	<!-- PORTFOLIO -->
-	<div class="portfolio">
-		<div class="container">
+<!-- HEADER -->
+<div class="header">
+    <div class="im"></div>
+    <div class="header_title">Timur Tsokov</div>
+    <div class="header_slogan">Верстка сайтов-визиток, интернет-магазинов, лендингов, новостных и развлекательных
+        порталов. <br> HTML5 CSS3 JS
+    </div>
 
-			<div class="Title">
-				Портфолио
-			</div>
+    <!-- 			<i class="fa fa-chevron-down" aria-hidden="true"></i>	 -->
+    <a href="#portfolio" class="header_scroll"><img src="img/scroll.png" alt="scroll"></a>
 
-			<div class="row">
-			<!-- Работа в Портфолио -->
-				<div class="col-4">
-					<div class="portfolio-item">
-						<div class="portfolio-item_img">
-							<a href="C:\Users\timur.tsokov\Desktop\MySite\index2.html" target="_blank" title="ФанСайт Slipknot">
-								<img src="img/portfolio/1slipknot.jpg" alt="ФанСайт Slipknot">
-							</a>
-						</div>
-						<div class="portfolio-item_title">
-							<a href="C:\Users\timur.tsokov\Desktop\MySite\index2.html" target="_blank">ФанСайт Slipknot</a>
-						</div>
-						<div class="portfolio-item_text">
-							<p>Верстка одностраничного сайта по макету из интернета</p>
-						</div>
-					</div>
-				</div>
-			
-				<div class="col-4">
-					<div class="portfolio-item">
-						<div class="portfolio-item_img">
-							<a href="https://tsokov2t1m5.wixsite.com/mysite" target="_blank" title="Wix ремонт">
-								<img src="img/portfolio/WixPO.jpg" alt="Wix ремонт">
-							</a>
-						</div>
-						<div class="portfolio-item_title">
-							<a href="https://tsokov2t1m5.wixsite.com/mysite" target="_blank">Wix ремонт</a>
-						</div>
-						<div class="portfolio-item_text">
-							<p>Верстка сайта используя интернет платформу WIX</p>
-						</div>
-					</div>
-				</div>
+</div>
+<!-- PORTFOLIO -->
+<div class="portfolio" id="portfolio">
+    <div class="container">
 
-				<div class="col-4">
-					<div class="portfolio-item">
-						<div class="portfolio-item_img">
-							<a href="https://wp.me/P9hwpF-5" target="_blank" title="Лухари cars">
-								<img src="img/portfolio/WPcars.jpg" alt="Лухари cars">
-							</a>
-						</div>
-						<div class="portfolio-item_title">
-							<a href="https://wp.me/P9hwpF-5" target="_blank">Лухари cars</a>
-						</div>
-						<div class="portfolio-item_text">
-							<p>Создание сайта используя интернет платформу WordPress</p>
-						</div>
-					</div>
-				</div>
-			<!-- // Работа в Портфолио -->
-			</div>	
-		</div>
-	</div>
+        <div class="Title">
+            Портфолио
+        </div>
 
-	<!-- FOOTER -->
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-4">
-					<p class="footer_name">Тимур Цоков</p>
-					<p> © 2017 HTML верстка и разработка сайтов</p>
-				</div>
-				<div class="col-4">
-					<p class="footer_social">Мои профили в социальных сетях:</p>
-					<p class="footer_social-icons">
-						<a href='#'>
-							<i class="fa fa-vk" aria-hidden="true"></i>
-						</a>	
-						<a href='#'>
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-					  </a>
-					  <a href='#'>
-							<i class="fa fa-facebook" aria-hidden="true"></i>
-					  </a>
-					  <a href='#'>
-							<i class="fa fa-instagram" aria-hidden="true"></i>
-					  </a>
-					  <a href='#'>
-							<i class="fa fa-youtube" aria-hidden="true"></i>
-					  </a>
-					</p>
-				</div>
-				<div class="col-4">
-					<div><a href="#" class="button" target="_blank">Связаться вконтакте</a></div>
-					<p>Напишите мне, чтобы заказать или узнать <br> стоимость верстки вашего сайта</p>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="row">
+            <!-- Работа в Портфолио -->
+            <div class="col-4">
+                <div class="portfolio-item">
+                    <div class="portfolio-item_img">
+                        <a href="https://timurtsokov.github.io/Akad/build/index.html" target="_blank" title="AKAD">
+                            <img src="img/portfolio/Akad.jpg" alt="akad">
+                        </a>
+                    </div>
+                    <div class="portfolio-item_title">
+                        <a href="https://timurtsokov.github.io/Akad/build/index.html" target="_blank">Интернет сайт
+                            AKAD</a>
+                    </div>
+                    <div class="portfolio-item_text">
+                        <p>Верстка многостраничного сайта по макету psd с помощью фреймворка Bootstrap 4.</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-4">
+                <div class="portfolio-item">
+                    <div class="portfolio-item_img">
+                        <a href="https://timurtsokov.github.io/Activebox/build/index.html" target="_blank"
+                           title="Activebox">
+                            <img src="img/portfolio/activebox.jpg" alt="Activebox">
+                        </a>
+                    </div>
+                    <div class="portfolio-item_title">
+                        <a href="https://timurtsokov.github.io/Activebox/build/index.html" target="_blank">Лендинг
+                            Activebox</a>
+                    </div>
+                    <div class="portfolio-item_text">
+                        <p>Верстка лендингов по макету c использованием модальных окон и слайдеров.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="portfolio-item">
+                    <div class="portfolio-item_img">
+                        <a href="https://timurtsokov.github.io/Creato/index.html" target="_blank" title="Creato">
+                            <img src="img/portfolio/creato.jpg" alt="Creato">
+                        </a>
+                    </div>
+                    <div class="portfolio-item_title">
+                        <a href="https://timurtsokov.github.io/Creato/index.html" target="_blank">Сайт Creato</a>
+                    </div>
+                    <div class="portfolio-item_text">
+                        <p>Верстка лендингов по макету с подключением isotope.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="portfolio-item">
+                    <div class="portfolio-item_img">
+                        <a href="https://timurtsokov.github.io/Romeron.github.io/" target="_blank"
+                           title="Romeron">
+                            <img src="img/portfolio/Romeron.jpg" alt="Romeron">
+                        </a>
+                    </div>
+                    <div class="portfolio-item_title">
+                        <a href="https://timurtsokov.github.io/Romeron.github.io/" target="_blank">Интернет-магазин
+                            Romeron</a>
+                    </div>
+                    <div class="portfolio-item_text">
+                        <p>Верстка интернет-магазина по макету Photoshop.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="portfolio-item">
+                    <div class="portfolio-item_img">
+                        <a href="https://timurtsokov.github.io/Foliac/index.html" target="_blank"
+                           title="Foliac">
+                            <img src="img/portfolio/foliac.jpg" alt="Foliac">
+                        </a>
+                    </div>
+                    <div class="portfolio-item_title">
+                        <a href="https://timurtsokov.github.io/Foliac/index.html" target="_blank">Сайт Foliac</a>
+                    </div>
+                    <div class="portfolio-item_text">
+                        <p>Верстка адаптивных сайтов под разные устройства</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="portfolio-item">
+                    <div class="portfolio-item_img">
+                        <a href="https://timurtsokov.github.io/Bouncy/index.html" target="_blank"
+                           title="Bouncy">
+                            <img src="img/portfolio/bouncy.jpg" alt="Bouncy">
+                        </a>
+                    </div>
+                    <div class="portfolio-item_title">
+                        <a href="https://timurtsokov.github.io/Bouncy/index.html" target="_blank">Лендинг Bouncy</a>
+                    </div>
+                    <div class="portfolio-item_text">
+                        <p>Верстка лендингов по макету с подключением карт и использованием Gulp</p>
+                    </div>
+                </div>
+            </div>
+            <!-- // Работа в Портфолио -->
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <p class="footer_name">Тимур Цоков</p>
+                <p> © 2018 HTML верстка и разработка сайтов</p>
+            </div>
+            <div class="col-4">
+                <p class="footer_social">Мои профили в социальных сетях:</p>
+                <p class="footer_social-icons">
+                    <a href='https://www.facebook.com/profile.php?id=100001940512983' target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href='https://vk.com/t1myr88' target="_blank">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    <a href='#'>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href='#'>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href='#'>
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="col-4">
+                <div><a href="https://www.facebook.com/profile.php?id=100001940512983" class="button" target="_blank">Связаться
+                    facebook</a></div>
+                <p>Напишите мне, чтобы заказать или узнать <br> стоимость верстки вашего сайта</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/jscript.js"></script>
 
 </body>
 </html>

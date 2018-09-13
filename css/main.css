@@ -1,3 +1,4 @@
+
 html, body{
 	font-family: 'PT Sans Caption', sans-serif;
 	font-size: 16px;
@@ -11,7 +12,8 @@ a{
 	transition: 0.3s ease-out;
 }
 *{
-	box-sizing: border-box;	
+	box-sizing: border-box;
+	outline: none;
 }
 							/*GRID*/
 .container{
@@ -24,13 +26,19 @@ a{
 	content: "";
 	display: table;
 }
+
+.row {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+}
 .col-4{
-	width: 360px;
+	max-width: 33%;
 	margin-right: 30px;
-	float: left;
+	/*float: left;*/
 }
 .col-4:last-child{
-	margin-right: 0px;
+	margin-right: 0;
 }
 							/*HEADER*/
 .header{
@@ -46,7 +54,7 @@ a{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	position: relative;
 }
 .im{
@@ -56,27 +64,47 @@ a{
 .header_title{
 	font-weight: bold;
 	font-size: 50px;
-	margin-bottom: 50px;
+	/*margin-bottom: 20px;*/
 	font-family: 'Merriweather', serif;
-	margin-top: -410px;
-	margin-right: -470px;
+	margin-top: 50px;
+	margin-left: 300px;
+	/*margin-right: -300px;*/
 }
 .header_slogan{
+	max-width: 30%;
 	font-weight: bold;
 	font-size: 23px;
 	line-height: 42px;
-	margin-right: -190px;
+	text-align: right;
+	margin-left: 100px;
+	/*margin-right: -190px;*/
 }
-.header_arrow{
-	font-size: 48px;
-	/*background: red;*/
-	width: 60px;
-	height: 20px;
-	margin-left: -30px;
+
+.header_scroll {
 	position: absolute;
-	bottom: 50px;
-	left: 50%;
+	background-color: #1F7398;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	bottom: 3%;
+	display: inline-block;
 }
+
+.header_scroll > img {
+	width: 12px;
+	height: 7px;
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.header_scroll:hover,
+.header_scroll:focus,
+.header_scroll:active {
+	transform: scale(1.2);
+}
+
 							/*PORTFOLIO*/
 .portfolio{
 	padding-top:70px; 
@@ -85,6 +113,7 @@ a{
 }
 .portfolio-item{
 	margin-bottom: 20px;
+	text-align: center;
 }
 .Title{
 	font-size: 46px;
@@ -95,10 +124,17 @@ a{
 }
 .portfolio-item_img{
 	margin-bottom: 17px;
+	transition: all 0.5s ease;
+}
+
+.portfolio-item_img:hover,
+.portfolio-item_img:focus {
+	transform: scale(1.1);
 }
 .portfolio-item_img img{
-	max-width: 100%;
+	width: 100%;
 	height: auto;
+	border-radius: 10px;
 }
 .portfolio-item_title{
 	font-size: 24px;
@@ -127,7 +163,7 @@ a{
 	background-color: #061634;
 	color: #6479a2;
 	padding-top: 90px;
-	padding-bottom: 170px;
+	padding-bottom: 100px;
 }
 .footer p{
 	margin-top: 0px;
@@ -145,6 +181,7 @@ p.footer_social{
 p.footer_social-icons{
 	color: #fff;
 	font-size: 32px;
+
 }
 p.footer_social-icons a{
 	color: #fff;
@@ -152,10 +189,14 @@ p.footer_social-icons a{
 	margin-right: 30px;
 }
 p.footer_social-icons a:last-child{
-	margin-right: 0px;
+	margin-right: 0;
 }
-p.footer_social-icons a:hover{
+
+p.footer_social-icons i:hover,
+p.footer_social-icons i:focus {
 	color: #FFE423;
+	transform: scale(1.2);
+	transition: all .3s ease-in-out;
 }
 .button{
 	font-weight: 700;
@@ -182,12 +223,11 @@ p.footer_social-icons a:hover{
 	border-color: #000;
 }
 							/*MEDIA*/
-@media (max-width: 1160px){
+@media screen and (max-width: 1160px) {
 	.container{
 		width: 100%;
 	}
 	.col-4{
-		width: 100%;
 		margin: 0;
 		margin-bottom: 30px;
 		padding-left: 15px;
@@ -195,19 +235,26 @@ p.footer_social-icons a:hover{
 		text-align: center;
 	}
 	.header{
-		padding-right: 10px;
-		padding-left: 10px;
+		/*padding-right: 10px;*/
+		/*padding-left: 10px;*/
+		padding: 50px;
+		justify-content: flex-start;
+		text-align: center;
 	}
 	.header_title{
 		font-size: 30px;
 		line-height: 45px;
 		margin-bottom: 15px;
-		margin:auto;
+		margin-left: 150px;
+		max-width: 80%;
+		/*margin:auto;*/
 	}
 	.header_slogan{
-		font-size: 15px
+		font-size: 15px;
 		line-height: 35px;
-		margin:auto;
+		max-width: 40%;
+
+		/*margin:auto;*/
 	}
 	.portfolio{
 		padding-top: 40px;
@@ -222,7 +269,27 @@ p.footer_social-icons a:hover{
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.header_slogan {
+		text-align: center;
+		max-width: 50%;
+	}
 
+	.portfolio-item_title {
+		font-size: 18px;
+	}
+
+	.portfolio-item_text {
+		font-size: 12px;
+	}
+
+	.portfolio-item_img img {
+		width: 110%;
+		height: auto;
+		border-radius: 10px;
+	}
+
+}
 
 
 
